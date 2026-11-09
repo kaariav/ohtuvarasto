@@ -47,4 +47,4 @@ def test_ota_liikaa():
 
 def test_str():
     varasto = Varasto(100, 20)
-    assert str(varasto) == "saldo = 20, vielä tilaa 80"    
+    assert str(varasto) == "saldo = 20, vielä tilaa 80"
