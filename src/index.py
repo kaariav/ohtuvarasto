@@ -2,7 +2,7 @@ from varasto import Varasto
 
 
 def tulosta_alkutilanne(mehua, olutta):
-    print("Luonnin jälkeen:")
+    print("Luonnin jÃ¤lkeen:")
     print(f"Mehuvarasto: {mehua}")
     print(f"Olutvarasto: {olutta}")
 
@@ -14,7 +14,7 @@ def tulosta_alkutilanne(mehua, olutta):
 
 def testaa_mehu(mehua):
     print("Mehu setterit:")
-    print("Lisätään 50.7")
+    print("LisÃ¤tÃ¤Ã¤n 50.7")
     mehua.lisaa_varastoon(50.7)
     print(f"Mehuvarasto: {mehua}")
     print("Otetaan 3.14")
@@ -72,4 +72,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
