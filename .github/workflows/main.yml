@@ -23,6 +23,9 @@ jobs:
       - name: Run tests
         run: uv run coverage run --branch -m pytest
 
+      -       - name: Run pylint
+        run: uv run pylint src 
+
       - name: Generate coverage report
         run: uv run coverage xml
 
@@ -32,6 +35,8 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage.xml
           fail_ci_if_error: true
+
+          
 
 
    
