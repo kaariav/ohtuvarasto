@@ -41,5 +41,3 @@ class Varasto:
             f"vielä tilaa {self.paljonko_mahtuu()}"
         )
 
-def testivirhe():
-    x = 1
