@@ -9,4 +9,5 @@ dependencies = []
 dev = [
     "coverage>=7.17.2",
     "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
 ]
