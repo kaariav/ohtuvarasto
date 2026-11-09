@@ -1,4 +1,4 @@
-```yaml
+
 name: CI
 
 on:
@@ -22,10 +22,11 @@ jobs:
         
       - name: Run tests
         run: uv run coverage run --branch -m pytest
+        
       - name: Coverage report
-        run: uv run coverage xml
-
+        run: uv run coverage xml        
       - name: Coverage report to Codecov
         uses: codecov/codecov-action@v5
+        
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
